@@ -18,9 +18,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:all": "react-scripts test --watchAll",
-    "test:cov": "react-scripts test --coverage",
+    "test": "jest --clearCache && jest",
+    "test:clear_cache": "jest --clearCache",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
     "eject": "react-scripts eject",
     "ts-check": "tsc --noEmit",
     "type-check": "tsc --pretty --noEmit",
@@ -54,6 +55,7 @@
     "eslint": "^8.19.0",
     "husky": "^8.0.1",
     "jest": "^28.1.2",
+    "jest-environment-jsdom": "^28.1.2",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.6"
   }
