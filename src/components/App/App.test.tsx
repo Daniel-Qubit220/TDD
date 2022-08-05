@@ -7,7 +7,7 @@ import TEXT from '../../constants/text'
 
 test('renders learn react link', () => {
   render(<App />)
-  screen.debug()
+  // screen.debug()
   const welcomeMessage = screen.getByText(TEXT.welcome)
   expect(welcomeMessage).toBeInTheDocument()
 })
